@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="./javascript/index.js"></script>
+    <script defer src="./javascript/herr.js"></script>
+    <script defer src="./javascript/shoppingcart.js"></script>
 </head>
 <body>
     <header>
-    <a href="index.html"><h1>Boots&Choose</h1></a>      
+        <a href="index.html">
+            <h1>Boots&Choose</h1>
+        </a>
     </header>
     <nav>
         <div class="links">
@@ -26,6 +31,7 @@
                     <path d="m151 405.003906c0 24.816406 20.1875 45 45.003906 45 24.8125 0 45-20.183594 45-45 0-24.8125-20.1875-45-45-45-24.816406 0-45.003906 20.1875-45.003906 45zm0 0"></path>
                     <path d="m362.003906 405.003906c0 24.816406 20.1875 45 45 45 24.816406 0 45-20.183594 45-45 0-24.8125-20.183594-45-45-45-24.8125 0-45 20.1875-45 45zm0 0"></path>
                 </svg>
+                <span class="cart-product-count">0</span>
             </a>
             <form id="search-form" role="search">
                 <label class="search">
@@ -35,35 +41,18 @@
                     name="q"
                     placeholder="Sök..."
                     aria-label="Search though site content"
+                    autocomplete="off"
                     />
                     <img src="/images/search1.png" alt="" height="16">
                 </label>
+                <div class="search-suggestions">
+                  <ul class="search-list"></ul>
+                </div>
               </form>
         </div>
     </nav>
-    
-    <main>
-        <header>
-            <h1>Handla toppkategorier</h1>
-        </header>
+    <main class="herrskor">
+       
     </main>
-        <div class="bilder">
-            <a class="bilder1" href="skor1.html"><img src="./images/skor1.jpeg" alt=""></a>
-            <a class="bilder1" href="skor2.html"><img src="./images/skor2.jpeg" alt=""></a>
-        </div>
-        <div class="bilder">
-            <a class="bilder1" href="skor3.html"><img src="./images/skor3.jpeg" alt=""></a>
-            <a class="bilder1" href="skor4.html"><img src="./images/skor4.jpeg" alt=""></a>
-        </div>
-        <header>
-            <h2>Toppmärken</h2>
-        </header>
-        <div class="bilder">
-            <a class="bilder1" href="1"><img src="./images/topp1.jpeg" alt=""></a>
-        </div>
-        <div class="bilder">
-            <a class="bilder1" href="3"><img src="./images/topp3.jpg" alt=""></a>
-            <a class="bilder1" href="4"><img src="./images/topp4.jpg" alt=""></a>
-        </div>
 </body>
 </html>
